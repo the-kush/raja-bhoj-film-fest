@@ -83,7 +83,7 @@ const Navbar = () => {
                             <a key={index}
                             href={`#${item.toLocaleLowerCase()}`}
                             onClick={() => setIsOpen(false)}
-                                className="text-white flex flex-col relative items-center nav-hover-btn hover:text-yellow-300 !text-2xl p-0.5"
+                                className="text-white flex flex-col relative items-center nav-hover-btn hover:text-yellow-300 !text-lg pt-2"
                             >
                                 {item}
                             </a>
