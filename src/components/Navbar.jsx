@@ -78,12 +78,12 @@ const Navbar = () => {
                     </div>
                 </nav>
                 {isOpen && (
-                    <div className="absolute insert-x-0 top-full mt-2 bg-gray-800 rounded-xl shadow-xl p-4">
+                    <div className="justify-center items-center px-2 py-2 md:py-4 max-w-7xl mx-auto bg-black rounded-l shadow-xl">
                         {navItems.map((item, index) => (
                             <a key={index}
                             href={`#${item.toLocaleLowerCase()}`}
                             onClick={() => setIsOpen(false)}
-                                className="text-white flex flex-col relative items-center nav-hover-btn hover:text-yellow-300 !text-2xl"
+                                className="text-white flex flex-col relative items-center nav-hover-btn hover:text-yellow-300 !text-2xl p-0.5"
                             >
                                 {item}
                             </a>
