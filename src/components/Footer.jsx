@@ -11,7 +11,7 @@ const socialLinks = [
 
 const Footer = () => {
     return (
-        <footer className="w-screen py-6 px-6 text-white">
+        <footer className="w-screen py-6 px-6 text-white border-t-2 border-gray-600 border-dashed">
             <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 md:flex-row">
                 <p className="text-center text-sm font-light md:text-left">©Raja Bhoj Films. All Rights Reserved</p>
                 <div className="flex justify-center gap-4 md:justify-start">
