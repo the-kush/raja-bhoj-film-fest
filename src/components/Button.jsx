@@ -4,7 +4,7 @@ const Button = ({ id, title, rightIcon, leftIcon, containerClass }) => {
         <button
             id={id}
             className={clsx(
-                "group relative z-10 w-fit cursor-pointer overflow-hidden rounded-full bg-violet-50 px-7 py-3 text-black hover:bg-yellow-300",
+                "group relative z-10 w-auto cursor-pointer overflow-hidden rounded-full bg-violet-50 px-7 py-3 text-black hover:bg-yellow-300",
                 containerClass
             )}
         >
@@ -17,7 +17,9 @@ const Button = ({ id, title, rightIcon, leftIcon, containerClass }) => {
         <div className="absolute translate-y-[164%] skew-y-12 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
           {title}
         </div>
+                <div className="pl-2">
             {rightIcon}
+                </div>
       </span>
 
         </button>

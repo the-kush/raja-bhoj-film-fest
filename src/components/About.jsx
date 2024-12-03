@@ -39,7 +39,7 @@ const About = () => {
                     <Button
                         id="learn-more"
                         title="Learn More"
-                        rightIcon={<TiLocationArrow />}
+                        rightIcon={<TiLocationArrow size={16}/>}
                         containerClass="!bg-black text-white"
                     />
                 </div>
@@ -49,7 +49,7 @@ const About = () => {
                     <img
                         src="/img/about.webp"
                         alt="Background"
-                        className='absolute left-0 top-0 size-full object-cover'
+                        //className='absolute left-0 top-0 size-full object-cover'
                     />
                 </div>
             </div>
