@@ -1,4 +1,5 @@
 import React, { useState, useRef} from 'react'
+import {TiArrowRight, TiLocationArrow} from "react-icons/ti";
 
 const TiltCard = ({ children, className}) => {
     const [transformStyle, setTransformStyle] = useState('')
@@ -57,6 +58,10 @@ const Registration = () => {
                             <div className="flex flex-col items-center justify-center text-black pt-14 mt-4">
                                 <h1 className="bento-title special-font">Register</h1>
                                 <p className="mt-3 text-xm md:text-base">Click to Learn more or Register for the event</p>
+                                <div className="flex flex-col md:flex-row gap-4 pt-16">
+                                    <button className="bg-white px-4 py-2 rounded-lg shadow-xl w-full flex flex-row items-center gap-2 font-robert-regular uppercase hover:bg-yellow-300">Learn More <TiLocationArrow size={20}/></button>
+                                    <button className="bg-white px-4 py-2 rounded-lg shadow-xl w-auto flex items-center gap-2 font-robert-regular uppercase hover:bg-yellow-300">Register <TiLocationArrow size={20}/></button>
+                                </div>
                             </div>
                         </div>
                     </div>
