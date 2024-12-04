@@ -4,6 +4,7 @@ import Hero from "../components/Hero.jsx";
 import About from "../components/About.jsx";
 import Registration from "../components/Registration.jsx";
 import Footer from "../components/Footer.jsx";
+import AboutUs from "../components/AboutUs.jsx";
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
                     {<Navbar />}
                     {<Hero />}
                     {<About />}
+                    {<AboutUs />}
                     {<Registration />}
                     {<Footer />}
         </div>

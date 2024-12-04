@@ -27,7 +27,7 @@ const Footer = () => {
                     ))}
                 </div>
                 <a className="text-center text-sm font-light hover:text-yellow-300 hover:underline md:text-right">
-                    Privacy Policy
+                    Privacy Policy | Terms & Conditions
                 </a>
             </div>
         </footer>
