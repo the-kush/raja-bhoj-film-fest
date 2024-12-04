@@ -1,9 +1,17 @@
 import React, {Suspense} from 'react'
+import {FaFacebook, FaInstagram, FaTwitter, FaWhatsapp} from "react-icons/fa";
+import MovieSlider from "./MovieSlider.jsx";
 // import { Canvas } from "@react-three/fiber"
 // import { OrbitControls} from "@react-three/drei";
 // import Film from "../components/Film.jsx";
 
 const AboutUs = () => {
+    const socialLinks = [
+        {href: "https://www.facebook.com/", label: "Facebook", icon: <FaFacebook />},
+        {href: "https://twitter.com/", label: "Twitter", icon: <FaTwitter />},
+        {href: "https://instagram.com/", label: "Instagram", icon: <FaInstagram />},
+        {href: "", label: "Whatsapp", icon: <FaWhatsapp />},
+    ]
     return (
         <section id="contact" className="">
             {/*//     <Canvas>*/}
@@ -54,14 +62,28 @@ const AboutUs = () => {
                     <div className="mt-6 py-6 border-t border-slate-200 text-center">
                         <div className="flex flex-wrap justify-center">
                             <div className="w-full px-4">
-                                <p className="font-light leading-relaxed text-slate-600 mb-4">Akash Gautam is known for Hexing (2017), Gandhi Fer Aa Gea (2020) and Delhi Crime (2019).</p>
-                                <a href="javascript:;" className="font-normal text-slate-700 hover:text-slate-400">Follow
-                                    Account</a>
+                                <p className="font-light leading-relaxed text-slate-600 mb-4">Akash Gautam is known for
+                                    Hexing (2017), Gandhi Fer Aa Gea (2020) and Delhi Crime (2019).</p>
+                                <div className="flex flex-row items-center justify-center gap-4">
+                                    {socialLinks.map((link, index) => (
+                                        <a
+                                            key={index}
+                                            href={link.href}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className=" transition-colors duration-500 ease-in-out text-black">
+                                            {link.icon}
+                                        </a>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+                    <div>
+                        <MovieSlider />
+                    </div>
 
         </section>
     )

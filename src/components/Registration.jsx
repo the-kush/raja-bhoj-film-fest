@@ -42,7 +42,7 @@ const Registration = () => {
         navigate("/learn-more");
     }
     return (
-        <section id="register" className="pb-52">
+        <section id="register" className="pb-16">
             <div className="container mx-auto px-3 md:px-19">
                 <div className='px-5 py-32 flex flex-col items-center justify-center'>
                     <p className='font-circular-web text-lg text-blue-50'>Raja Bhoj Film Festival
@@ -73,8 +73,8 @@ const Registration = () => {
                     </div>
                 </TiltCard>
             </div>
-            <div className="flex flex-col items-center justify-center pt-4 md:pt-16">
-                <h2 className="md:text-5xl text-red-300 font-robert-regular mx-2 text-4xl pb-4">Subscribe to Our Newsletter</h2>
+            <div className="flex flex-col items-center justify-center pt-8 md:pt-16">
+                <h2 className="md:text-5xl text-red-300 font-robert-regular mx-2 text-3xl pb-4">Subscribe to Our Newsletter</h2>
                 <div className="relative flex h-10 w-full min-w-[200px] max-w-[24rem]">
                     <button
                         className="!absolute right-1 top-1 z-10 select-none rounded hover:bg-red-300 py-2 px-4 text-center align-middle font-general text-xs font-bold uppercase text-white shadow-md transition-all hover:shadow-lg hover:shadow-red-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none peer-placeholder-shown:pointer-events-none peer-placeholder-shown:bg-blue-gray-500 peer-placeholder-shown:opacity-50 peer-placeholder-shown:shadow-none"

@@ -18,7 +18,7 @@ const LearnMore = () => {
                 <div className="p-2 pt-24">
                 <button className="bg-white z-10 flex flex-row text-black px-4 py-2 rounded-lg shadow-xl w-auto items-center gap-2 font-robert-regular uppercase hover:bg-yellow-300" onClick={goback}><TiArrowLeft /> Go Back</button>
                 </div>
-                <div className="text-white flex flex-col pt-32">
+                <div className="text-white flex flex-col pt-12">
                     <div className="text-center">
                         <h1 className="p-2 md:text-5xl text-2xl font-circular-web">Why Register?</h1>
                         <h1 className="p-2 md:text-6xl text-3xl font-circular-web">Raja Bhoj Film Festival</h1>
