@@ -29,7 +29,7 @@ const AboutUs = () => {
                                 <div className="p-3 text-center">
                                     <span
                                         className="text-xl font-bold block uppercase tracking-wide text-slate-700">4</span>
-                                    <span className="text-sm text-slate-400">Production Designer</span>
+                                    <span className="text-sm text-slate-400">Production <br /> Designer</span>
                                 </div>
                                 <div className="p-3 text-center">
                                     <span
