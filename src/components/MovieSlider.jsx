@@ -1,68 +1,61 @@
-import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
-import {useEffect, useRef} from "react";
-import image1 from "../../public/img/movie-1.webp";
-import image2 from "../../public/img/movie-2.jpg";
-import image3 from "../../public/img/movie-3.jpeg";
-import image4 from "../../public/img/movie-4.webp";
-import image5 from "../../public/img/movie-5.jpg";
-import image6 from "../../public/img/movie-7.jpg";
+import { MdChevronLeft, MdChevronRight} from "react-icons/md";
 
 const MovieSlider = () => {
-    const images = [
-        image1,
-        image2,
-        image3,
-        image4,
-        image5,
-        image6,
+    const image = [
+        {
+            id: 1,
+            src: "/img/movie-1.webp"
+        },
+        {
+            id: 2,
+            src: "/img/movie-2.jpg"
+        },
+        {
+            id: 3,
+            src: "/img/movie-3.jpeg"
+        },
+        {
+            id: 4,
+            src: "/img/movie-4.webp"
+        },
+        {
+            id: 5,
+            src: "/img/movie-5.jpg"
+        },
+        {
+            id: 6,
+            src: "/img/movie-7.jpg"
+        }
     ]
 
-    const galleryRef = useRef(null);
+    const slideLeft = () => {
+        let slider = document.getElementById('slider');
+        slider.scrollLeft = slider.scrollLeft - 500;
+    };
 
-    useEffect(() => {
-        const gallery = galleryRef.current;
-
-        // Clone the images for seamless scrolling
-        const scrollImages = [...images];
-
-        let scrollSpeed = 0.5; // Adjust the speed here
-        let scrollPosition = 0;
-
-        const scrollGallery = () => {
-            scrollPosition -= scrollSpeed;
-
-            // Reset position when reaching the end
-            if (Math.abs(scrollPosition) >= gallery.scrollWidth / 2) {
-                scrollPosition = 0;
-            }
-
-            gallery.style.transform = `translateX(${scrollPosition}px)`;
-            requestAnimationFrame(scrollGallery);
-        };
-
-        scrollGallery(); // Start the animation
-
-        return () => cancelAnimationFrame(scrollGallery); // Cleanup on component unmount
-    }, [images]);
+    const slideRight = () => {
+        let slider = document.getElementById('slider');
+        slider.scrollLeft = slider.scrollLeft + 500;
+    };
 
     return (
-        <div className="relative w-full">
+        <div className='relative flex items-center'>
+            <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideLeft} size={40}/>
             <div
-                ref={galleryRef}
-                className="flex w-max"
-                style={{ whiteSpace: "nowrap" }}
+                id='slider'
+                className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide img-fluid'
             >
-                {images.concat(images).map((image, index) => (
-                    <div key={index} className="flex-shrink-0 w-1/2 md:w-1/4 px-2">
-                        <img
-                            src={image.src}
-                            alt={image.alt || `Image ${index + 1}`}
-                            className="w-full h-auto rounded-lg shadow-md"
-                        />
-                    </div>
+                {image.map((item) => (
+                    <img
+                        className='w-[220px] h-[220px] inline-block p-2 cursor-pointer hover:scale-150 ease-in-out duration-300'
+                        src={item.src}
+                        alt='/'
+                    />
                 ))}
             </div>
+            <MdChevronRight className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideRight} size={40}/>
         </div>
+
     );
 
 }
