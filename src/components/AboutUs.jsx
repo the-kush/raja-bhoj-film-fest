@@ -1,6 +1,7 @@
 import React from 'react'
 import {FaFacebook, FaImdb, FaInstagram, FaTwitter, FaWhatsapp} from "react-icons/fa";
 import MovieSlider from "./MovieSlider.jsx";
+import Info from "./Info.jsx";
 
 
 const AboutUs = () => {
@@ -40,7 +41,7 @@ const AboutUs = () => {
     ]
     return (
         <section id="contact" className="">
-
+        <Info />
             <div
                 className="relative max-w-md mx-auto md:max-w-2xl min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-xl mt-32">
                 <div className="px-6">
