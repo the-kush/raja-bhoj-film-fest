@@ -1,9 +1,7 @@
-import React, {Suspense} from 'react'
-import {FaFacebook, FaInstagram, FaTwitter, FaWhatsapp} from "react-icons/fa";
+import React from 'react'
+import {FaFacebook, FaImdb, FaInstagram, FaTwitter, FaWhatsapp} from "react-icons/fa";
 import MovieSlider from "./MovieSlider.jsx";
-// import { Canvas } from "@react-three/fiber"
-// import { OrbitControls} from "@react-three/drei";
-// import Film from "../components/Film.jsx";
+
 
 const AboutUs = () => {
     const socialLinks = [
@@ -11,15 +9,37 @@ const AboutUs = () => {
         {href: "https://twitter.com/", label: "Twitter", icon: <FaTwitter />},
         {href: "https://instagram.com/", label: "Instagram", icon: <FaInstagram />},
         {href: "", label: "Whatsapp", icon: <FaWhatsapp />},
+        {href: "https://www.imdb.com/name/nm8708980/", label: "IMDB", icon: <FaImdb />}
+    ]
+
+    const image = [
+        {
+            id: 1,
+            src: "/img/movie-1.webp"
+        },
+        {
+            id: 2,
+            src: "/img/movie-2.jpg"
+        },
+        {
+            id: 3,
+            src: "/img/movie-3.jpeg"
+        },
+        {
+            id: 4,
+            src: "/img/movie-4.webp"
+        },
+        {
+            id: 5,
+            src: "/img/movie-5.jpg"
+        },
+        {
+            id: 6,
+            src: "/img/movie-7.jpg"
+        }
     ]
     return (
         <section id="contact" className="">
-            {/*//     <Canvas>*/}
-            {/*//         <Suspense>*/}
-            {/*//             <Film />*/}
-            {/*//         </Suspense>*/}
-            {/*//     </Canvas>*/}
-
 
             <div
                 className="relative max-w-md mx-auto md:max-w-2xl min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-xl mt-32">
