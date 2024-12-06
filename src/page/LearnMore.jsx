@@ -86,9 +86,11 @@ const LearnMore = () => {
                         <p className="text-justify md:text-xl text-sm text-gray-500 px-6 py-2">Save the Date and prepare to be transported to a world where history and cinema unite!
                         </p>
                         <div className="flex justify-center py-8">
+                            <a href="https://workspace.google.com/intl/en_in/lp/forms/?utm_source=google&utm_medium=cpc&utm_campaign=1707696-Workspace-APAC-IN-en-BKWS-BRO-LV-Hybrid&utm_content=text-ad-none-none-DEV_c-CRE_608605507431-ADGP_Hybrid%20%7C%20BKWS%20-%20BRO%20%7C%20Txt-Forms-N%2FA-KWID_43700080103292606-kwd-11663925057&userloc_1007826-network_g=&utm_term=KW_google%20forms&gad_source=1&gclid=Cj0KCQiA3sq6BhD2ARIsAJ8MRwXbE3OUw90-ec9woMF64z1lXZRP49axUCmbCLHg0Ty04qE4K79l3NQaAnTIEALw_wcB&gclsrc=aw.ds">
                         <button className="bg-white flex flex-row text-black px-4 py-2 rounded-lg shadow-xl w-auto items-center gap-2 font-robert-regular uppercase hover:bg-yellow-300">
                             Register <TiArrowRight />
                         </button>
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -66,7 +66,9 @@ const Registration = () => {
                                 <p className="mt-3 text-xm md:text-base">Click to Learn more or Register for the event</p>
                                 <div className="flex flex-col md:flex-row gap-4 pt-16">
                                     <button className="bg-white px-4 py-2 rounded-lg shadow-xl w-full flex flex-row items-center gap-2 font-robert-regular uppercase hover:bg-yellow-300" onClick={handleNavigate}>Learn More <TiLocationArrow size={20}/></button>
+                                    <a href="https://workspace.google.com/intl/en_in/lp/forms/?utm_source=google&utm_medium=cpc&utm_campaign=1707696-Workspace-APAC-IN-en-BKWS-BRO-LV-Hybrid&utm_content=text-ad-none-none-DEV_c-CRE_608605507431-ADGP_Hybrid%20%7C%20BKWS%20-%20BRO%20%7C%20Txt-Forms-N%2FA-KWID_43700080103292606-kwd-11663925057&userloc_1007826-network_g=&utm_term=KW_google%20forms&gad_source=1&gclid=Cj0KCQiA3sq6BhD2ARIsAJ8MRwXbE3OUw90-ec9woMF64z1lXZRP49axUCmbCLHg0Ty04qE4K79l3NQaAnTIEALw_wcB&gclsrc=aw.ds">
                                     <button className="bg-white px-4 py-2 rounded-lg shadow-xl w-auto flex items-center gap-2 font-robert-regular uppercase hover:bg-yellow-300">Register <TiLocationArrow size={20}/></button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
