@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Grid from "./Grid.jsx";
+// import Grid from "./Grid.jsx";
 
 const Info = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -32,7 +32,6 @@ const Info = () => {
 
     return (
         <div className="">
-            <Grid />
             {sections.map((section, index) => (
                 <div
                     key={index}
