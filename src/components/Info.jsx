@@ -31,16 +31,16 @@ const Info = () => {
     }, []);
 
     return (
-        <div className="">
+        <div className="pt-52">
             {sections.map((section, index) => (
                 <div
                     key={index}
                     data-index={index}
-                    className={`scroll-section h-[400px] flex flex-col items-center justify-center ${
+                    className={`scroll-section h-[500px] flex flex-col items-center justify-center ${
                         activeIndex === index ? "opacity-100" : "opacity-50"
                     } transition-opacity duration-500`}
                 >
-                    <h1 className="text-4xl font-bold font-general">{section.title}</h1>
+                    <h1 className="text-4xl font-bold font-general pt-16">{section.title}</h1>
                     <p className="text-lg mt-4 text-justify md:px-32 px-16 text-gray-500 font-robert-regular">{section.content}</p>
                 </div>
             ))}
