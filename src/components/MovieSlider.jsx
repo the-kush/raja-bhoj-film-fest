@@ -40,7 +40,7 @@ const MovieSlider = () => {
     };
 
         return (
-            <div className='relative flex items-center'>
+            <div id="contact" className='relative flex items-center md:mx-24 mx-5 pt-8'>
                 <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideLeft} size={40}/>
                     <div
                         id='slider'

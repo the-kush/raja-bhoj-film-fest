@@ -14,6 +14,14 @@ export default {
         'robert-regular': ['robert-regular', 'sanf-serif'],
       },
       colors: {
+        black: {
+          DEFAULT: '#000000',
+          100: '#010103',
+          200: '#0E0E10',
+          300: '#1C1C21',
+          500: '#3A3A49',
+          600: '#1A1A1A',
+        },
         blue: {
           50: '#DFDFF0',
           75: '#DFDFF2',

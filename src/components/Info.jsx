@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import Grid from "./Grid.jsx";
 
 const Info = () => {
     const [activeIndex, setActiveIndex] = useState(0);
